@@ -1,0 +1,29 @@
+{
+  "name": "exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "unit:test": "mocha --config ./exam-unit/.mocharc.json",
+    "api:test": "mocha --config ./exam-api/.mocharc.json",
+    "ui:run": "cypress open --config-file=./exam-ui/cypress.config.ts",
+    "ui:report": "allure generate ./exam-ui/support/assets/allure-results --clean -o ./exam-ui/support/assets/allure-report && allure open ./exam-ui/support/assets/allure-report"
+  },
+  "author": "evgenij",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.32.1",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.7.6",
+    "allure": "^0.0.0",
+    "allure-commandline": "^2.18.1",
+    "chai": "^4.3.6",
+    "chromedriver": "^104.0.0",
+    "cypress": "^10.8.0",
+    "eslint": "^8.22.0",
+    "mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}

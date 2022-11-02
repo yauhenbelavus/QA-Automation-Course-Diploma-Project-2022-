@@ -1,0 +1,7 @@
+{
+    "extention": ["ts"],
+    "spec": ["**/exam-unit/tests/registration-form.spec.ts"],
+    "require": ["ts-node/register"],
+    "reporter": "spec",
+    "timeout": 5000
+}

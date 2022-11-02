@@ -1,0 +1,7 @@
+{
+    "extention": ["ts"],
+    "spec": ["**/exam-api/api/json-placeholder.spec.ts"],
+    "require": ["ts-node/register"],
+    "reporter": "spec",
+    "timeout": 5000
+}
